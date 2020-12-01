@@ -1,0 +1,415 @@
+/* 
+	Styling that is consistent throughout most/all html pages 
+															*/
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Noto Sans', sans-serif;
+	background: #FFFFFF;
+}
+
+.page-container{
+	width: 1440px;
+	height: 695px;
+}
+
+html{
+	scroll-behavior: smooth;
+}
+
+.separation{
+	margin-top: 20px;
+	margin-left: -10px;
+	size: 8;
+	width: 98%;
+	color: black;
+}
+
+.ContactPage, .LandingPage, .AboutPage, .project1Page{
+	margin-top: 80px;
+	margin-left: 40px;
+}
+
+a:focus{
+	outline-color: #3267CF;
+	color: purple;
+}
+
+button:focus{
+	outline-color: black;
+}
+
+input[type=text]:focus, select:focus, textarea:focus, input[type=submit]:focus{
+	outline-color: #3267CF;
+}
+
+
+
+/* 
+	Menu on top of each page 
+								*/
+.menuBlock{
+	padding-left: 50px;
+	position: fixed;
+	left: 0px;
+	right: 0px;
+	top: 0px;
+	box-shadow: 0px 1px 4px #0003;
+	width: 1440px;
+	height: 70px;
+}
+
+#bigName{
+	padding-right: 150px;
+	margin-left: -10px;
+	font-size: 30px;
+	font-weight: 600;
+	line-height: 70px;
+	color: ruby;
+	cursor: default;
+}
+
+.menubar{
+	margin-left: 200px;
+}
+
+header, .menubar li{
+	margin-right: 50px;
+	font-size: 20px;
+	line-height: 70px;
+	list-style: none;
+	cursor: pointer;
+	position: relative;
+}
+
+header, .menubar ul{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+header, .menubar a:hover{
+	color: purple;
+}
+
+li a{
+	color: #3267CF;
+	text-decoration: none;
+}
+
+
+
+/* 
+	Landing Page 
+					*/
+#landing{
+	margin-left: 300px;
+	margin-right: 300px;
+	margin-bottom: 175px;
+	margin-top: 250px;
+}
+
+#scrolljump{
+	margin-bottom: 67px;
+}
+
+#welcome{
+	color: #3267CF;
+	font-size: 80px;
+	font-weight: bold;
+	text-align: center;
+}
+
+#underText{
+	font-size: 22px;
+	text-align: center;
+	color: grey;
+}
+
+#projectButton{
+	border: none;
+	width: 200px;
+	height: 50px;
+	background: #3267CF;
+	color: white;
+	font-size: 15px;
+	margin-top: 100px;
+	margin-left: 150px;
+	cursor: pointer;
+}
+
+#contactButton{
+	border: none;
+	width: 200px;
+	height: 50px;
+	background: #3267CF;
+	color: white;
+	font-size: 15px;
+	margin-top: 100px;
+	margin-left: 100px;
+	cursor: pointer;
+}
+
+
+.projectText{
+	margin-top: 20px;
+}
+
+.project1, .project2{
+	display: flex;
+	flex-wrap: wrap;
+	margin-top: 20px;
+}
+
+#p1Img1{
+	margin-left: 0px;
+	width: 605px;
+	height: 350px;
+	border: 2px solid #000;
+}
+
+#p2Img1{
+	margin-left: 0px;
+	width: 400px;
+	height: 400px;
+	border: 2px solid #000;
+}
+
+#p1text{
+	max-width: 400px;
+	margin-left: 150px;
+	margin-top: 20px;
+	line-height: 30px;
+}
+
+#p2text{
+	max-width: 400px;
+	margin-left: 360px;
+	margin-top: 40px;
+	line-height: 30px;
+}
+
+#p1Link{
+	font-weight: bold;
+	font-style: italic;
+	cursor: pointer;
+	text-decoration: none;
+	font-size: 22px;
+}
+
+#p1Link:visited{
+	color: #3267CF;
+}
+
+.initial_animation{
+	animation: mymove 2s;
+}
+
+.initial_animation2{
+	animation: myfade 2.5s;
+}
+
+@keyframes mymove{
+	from {margin-right: 75px; color: white;}
+	to {margin-right: 0px;}
+}
+
+@keyframes myfade{
+	from {background: white;}
+	to {background: #3267CF;}
+}
+
+
+
+/* 
+	Project Description Page 
+								*/
+#p1Video2{
+	margin-left: 320px;
+	margin-top: 20px;
+}
+
+#newsLink{
+	font-size: 20px;
+	font-style: italic;
+	font-weight: bold;
+}
+
+#newsLink:visited{
+	color: #3267CF;
+}
+
+.p1First, .p1Second, .p1Third{
+	margin-top: 20px;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.p1Context, .p1Desc{
+	max-width: 700px;
+	line-height: 35px;
+}
+
+main em{
+	color: blue;
+}
+
+#trafficImage, #mrtImage, #eventimg{
+	height: 220px;
+	width: 330px;
+	margin-left: 150px;
+	border: 2px solid #000;
+}
+
+.p1caption, .p1caption2{
+	font-size: 12px;
+	font-style: italic;
+	text-align: center;
+	margin-left: 150px;
+}
+
+#gojekMRTimg{
+	height: 250px;
+	width: 333px;
+	margin-left: 150px;
+	border: 2px solid #000;
+}
+
+
+
+/* 
+	About Page
+				*/
+.aboutChunk{
+	display: flex;
+	flex-wrap: wrap;
+	margin-top: 30px;
+}
+
+#aboutImage1{
+	height: 175px;
+	width: 311px;
+	margin-left: 200px;
+	margin-top: 70px;
+	border: 2px solid #000;
+}
+
+#aboutImage2{
+	height: 271px;
+	width: 200px;
+	border: 4px solid #000;
+	margin-left: 250px;
+	margin-top: -50px;
+}
+
+#aboutCaption1{
+	font-size: 12px;
+	font-style: italic;
+	margin-left: 200px;
+	text-align: center;
+}
+
+.aboutText{
+	line-height: 35px;
+	max-width: 650px;
+}
+
+.aboutAnimation{
+	animation: aboutFade 1s;
+}
+
+@keyframes aboutFade{
+	from {margin-left: -20px; color: white;}
+	to {color: black;}
+}
+
+
+
+/*
+	Calendar Page
+					*/
+.CalendarPage iframe{
+	margin-top: 80px;
+	display: block;
+	width: 100%;
+}
+
+
+
+/*
+	Contact Page
+					*/
+.contactInfo{
+	display: flex;
+	flex-wrap: wrap;
+	margin: 30px;
+}
+
+.contactText{
+	font-size: 22px;
+	line-height: 40px;
+}
+
+.sameLine{
+	float:left;
+}
+
+form{
+	max-width: 750px;
+	margin-top: 20px;
+}
+
+.contactMe label{
+	margin-left: 30px;
+}
+
+textarea{
+	width: 630px;
+	height: 300px;
+	margin-left: 30px;
+	border: 2px solid grey;
+}
+
+input, select{
+	width: 300px;
+	padding: 7px;
+	margin-left: 30px;
+	margin-bottom: 10px;
+	border: 2px solid grey;
+}
+
+#submit{
+	border: 2px solid black;
+	border-radius: 25px;
+	width: 150px;
+	margin-top: 10px;
+	background: #3267CF;
+	color: white;
+	cursor: pointer;
+}
+
+.contactAnimation{
+	animation: contactFade 1s;
+}
+
+@keyframes contactFade{
+	from {margin-left: -10px; color: white;}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

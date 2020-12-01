@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> Personal Portfolio Website - Contact Page</title>
+		<link rel="stylesheet" href="P6.css"/>
+		<script src="P6.js"></script>
+	</head>
+	<div class="page-container">
+		<body>
+			<div class="menuBlock">
+				<header>
+					<span id="bigName">Paul Liong</span>
+						<nav class="menubar" aria-labelledby="mainmenulabel">
+							<ul>
+								<li> <a href="index.html" id="homeLink">Home</a></li>
+								<li> <a href="P6-AboutPage.html" id="aboutLink">About</a></li>
+								<li> <a href="References/Paul Liong-CV.pdf" target="_blank" id="resumeLink">CV (pdf)</a></li>
+								<li> <a href="P6-CalendarPage.html" id="calendarLink">Work Calendar</a></li>
+								<li> <a href="P6-ContactPage.html" aria-current="page" id="contactLink">Contact</a></li>
+							</ul>
+						</nav>
+				</header>
+			</div>
+		</body>
+
+		<main class="ContactPage">
+			<h1 class="contactAnimation"> Personal Contact Information </h1>
+			<div class="contactInfo"> 
+				<div>
+					<section class="contactText contactAnimation"> Paul M. Liong </section>
+					<section class="contactText contactAnimation"> Park Evanston Apt. 905 </section>
+					<section class="contactText contactAnimation"> 1630 Chicago Avenue </section>
+					<section class="contactText contactAnimation"> Evanston, IL 60201 </section>
+					<section class="contactText contactAnimation"> (917) 607-5692 </section>
+					<section class="contactText contactAnimation"> paulliong2023@u.northwestern.edu </section>
+				</div>
+			</div>
+
+			<hr class="separation"><br>
+
+			<div class="contactMe">
+				<h1 class="contactAnimation"> Contact Form </h1>
+				<form action="#" method="#" onsubmit="return(validate());">
+					<div class="sameLine">
+						<label class="contactAnimation" for="fname"> First Name<span>&#42;</span> </label><br>
+						<input class="contactAnimation"type="text" id="fname" name="firstName" placeholder="First Name Here" required>
+					</div>
+
+					<div class="sameLine">
+						<label class="contactAnimation" for="lname"> Last Name<span>&#42;</span> </label><br>
+						<input class="contactAnimation" type="text" id="lname" name="lastName" placeholder="Last Name Here" required>
+					</div>
+
+					<div class="sameLine">
+						<label class="contactAnimation" for="email"> Email<span>&#42;</span> </label><br>
+						<input class="contactAnimation" type="text" id="email" name="email" placeholder="yourname@email.com" required>
+					</div>
+
+					<div class="sameLine">
+						
+						<label class="contactAnimation" for="phone"> Phone Number </span> </label><br>
+						<input class="contactAnimation" type="text" id="phone" name="phoneNumber" placeholder="5555555555 or 555-555-5555">
+					</div>
+
+					<div class="sameLine">
+						<label class="contactAnimation" for="subject"> Subject<span>&#42;</span> </label><br>
+						<select class="contactAnimation" id="subject" name="subject" required>
+							<option disabled selected value> -- Select an Option -- </option>
+							<option value="General Inquiry">General Inquiry</option>
+							<option value="Hiring Query">Hiring Query</option>
+							<option value="xxx">Add More Entries </option>
+						</select>
+					</div>
+
+					<div class="sameLine">
+						<label class="contactAnimation" for="message"> Your Message </label><br>
+						<textarea class="contactAnimation" id="message" name="message" placeholder="Enter your message here"></textarea>
+					</div>
+
+					<div class="sameLine">
+						<input class="contactAnimation" id="submit" type="submit" value="Send Message">
+					</div>
+
+				</form>
+			</div>
+			</form>
+		</main>
+	</div>
+</html>
